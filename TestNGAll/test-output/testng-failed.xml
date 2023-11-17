@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="methods" name="Failed suite [my suite]" guice-stage="DEVELOPMENT" verbose="2">
+  <listeners>
+    <listener class-name="org.rep.ListenersExample"/>
+  </listeners>
+  <test thread-count="4" parallel="methods" name="mytest(failed)" verbose="2">
+    <classes>
+      <class name="org.rep.ToursAndTravels">
+        <methods>
+          <include name="GOibibo"/>
+          <include name="tc10"/>
+          <include name="AbhiBus"/>
+          <include name="CloseTheBrowser"/>
+        </methods>
+      </class> <!-- org.rep.ToursAndTravels -->
+    </classes>
+  </test> <!-- mytest(failed) -->
+</suite> <!-- Failed suite [my suite] -->
